@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <title>Home Page</title>
+</head>
+<body class="bg-gray-900">
+    <header class="flex justify-between items-center fixed z-10 px-6 py-6 bg-gray-800 w-full">
+        <nav class="flex justify-between items-center w-full">
+            <a class="flex items-center text-2xl text-white" href="#index">
+                <img src="/assets/svg/cybercore_logo.svg" alt="logo" class="w-[54px]">
+            </a>
+
+            <ul class="flex justify-center items-center text-white">
+                <li class="pr-6 text-lg">Home</li>
+                <li class="pr-6 text-lg">Produtos</li>
+                <li class="pr-6 text-lg">Contato</li>
+            </ul>
+
+
+            <div class="flex">
+                <a href="/src/pages/login_page.html">
+                    <button class="px-6 py-1 bg-[#7B68EE] text-white text-lg rounded-md mr-4">Login</button>
+                </a>
+
+                <button>
+                    <img class="w-[35px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACr0lEQVR4nO2az0uUQRjHZys6dimRoqCEhG7dsg79Ff066CEj6CR4CCGzVDpEaEKeOohGup46BB2qg5CHwtJL3cIyq0tQ7xKu+6MtPzHabvPaRunMvPvOzvuFB5aXhed5Pu935p133hEiUaJEiRKtCWgGLgJd60Jeaxb1LuANf9e88BwAot4FHAR6gOtK+AOgmhIAYXU5FueBvcIgABf1HbgBbPUVQFnD2gCe3Mo7E9PDeRaeldTyV4DDWgC6GwKn4nJjwOupb2oLfV4B6G4IeHBpWW3htncA5tLFUAteAbiyJyAXyKFfUYtXAO6cWVLLfw+kvAIwF7b/wIabdxlAFfsfET4BGDttwP4uA5idKKilD4rNCgcBSPsv687+LgMwZn9XARizv4sAjNrfRQBjp0L2/6BlfxcBzI6H7H9T6AqHAPTsDsh+Dtn/qFcARk8atr9rAF7cNWx/lwBYsb9LAKzY3yUA6+w/JEwJBwBUsf8xrwCMhu3/EdjiFYD56ZId+7sA4F5HVi1RjoNDwgcAvfsyPL6WY+WHWiEjRpv/F4Chlq887M3xqD+6mBrI8+p+kaVP4c6Bl8AOESWAL+/+KKJWego0Gm9eSs0iNnikJgLJ3Z4OYJuwJRT955Ea23EVuCC3uTf9zd8UAC/E2gmLsrYL3wQsKABOCN8EDCoA5BvHSEQHnNqMLmk1AOwCFqmN2kQcBDQBMzUA0CriIiAFHAc6I3rctcZiCCRKVHUIdP76nXIth84k+LzKJCWvNbmSw9ZjcFH+J+45jCyESkVWv73JkL+1DyBFmMPIUjh9NlvZC0i3h7ai3sY9h05xxXIFffszleL6D2TU4gpxz2Hm7rT/vjuT5yw5wFIOc+NzorB6ANHqHGAhh+0Zemfcc9h6GZoxvA6wmkO3wFQ9rgR/Atj0wEIlFUxOAAAAAElFTkSuQmCC">
+                </button>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img class="felx relative bg-cover w-full" src="/assets/img/BG_CYBERCORE.png" alt="hero_section_background">
+
+        <h1 class="flex absolute top-56 left-8 text-8xl font-bold text-white drop-shadow-md w-[800px]">
+            Tudo o que você precisa para o seu setup gamer
+        </h1>
+    </section>
+
+    <section class="flex justify-center">
+        <div class="flex justify-between items-center absolute top-[850px] px-6 py-10 bg-gray-800 w-4/5 rounded-lg gradient-border">
+            <h2 class="felx justify-center items-center text-white text-2xl">
+                O que você está procurando?
+            </h2>
+            <div class="grid grid-cols-5 gap-x-4">
+                <a class="border p-6 rounded-lg shadow-md" href="#worksation">
+                    <img class="m-auto w-[35px] mb-[4px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqElEQVR4nO2WSw7CMAxEcwj7MijsqTgRntvBTVq29hVgVUApDVGdio2flFWSmWicX0pBsDdCdgbbHWyPzyZsk5AO87iyv7VJofM2Zpsqk0avMQqdF78meRPFmk4YI6J2gthcM3GcsHKcPFcmPDfXsk8PYMudjHUhVllgvpAdez0SuRTzRi1sI1hPm6PuDv5lLJ0/AkJ2azMmHb6Zl7Vpr6ted8ooCFKVJ/Cr2VKt4RCHAAAAAElFTkSuQmCC">
+                    <p class="text-white text-lg text-center">Workstation</p>
+                </a>
+                <a class="border p-6 rounded-lg shadow-md" href="#monitores">
+                    <img class="m-auto w-[35px] mb-[4px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzElEQVR4nO2YQQrCMBBF5w4mG09kPdJ8wRP1UnZZJldQshAX1W5M0xn9D7IKpHk8kkBFCCH/xSXZWXOZkMs9wtBcJk02LEQiSeAlc1uIPCclCPi0X4rsBFjEGWARZ4BFnAEWcQZYxBlgEWeARZwBFnEGWMQZYJFoRRBsCEXy/hUQtYis7JEicFAIa0V+5m+8JhvqRCQJZDs1eJKIf/DtQfVCOJHrYT5qslGzWbvDa1bXrGt3E6kf3Ow2Sjb2E2lY4l0Z6cXWb4QQQqQ1D3U8d0vcIpCwAAAAAElFTkSuQmCC">
+                    <p class="text-white text-lg text-center">Monitores</p>
+                </a>
+                <a class="border p-6 rounded-lg shadow-md" href="#mouse">
+                    <img class="m-auto w-[35px] mb-[4px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFKklEQVR4nO1bXWgcVRS+qa31B1uzc+4kaauVUrQgFaT1jyJqwfrgg79V8Q+pEPuSQq01O+dunEdflKIiKD60WBFBqyIVH6pUUCpBRYoNiFWr1RqTnXN2G2ujgo6c7G523PztZnfvzLL94DxkmZk757tnzt89UaqFMQD5dajpC6P55V4VLlLtBtTUbzSHqPkb1Y7Awu4LAc+qdsOAk71KlBfJQO5KlQT0qnARunyb0fwMAn9ggD9F4E9Q02tGcxrd4Fqlwo5GrGU07y8QQB+ruOGrcKHn0A4EHi7tyowC9L2QsdPJXjDf9VAHdxWV/9cDvqGx2tQIhNEeo+nzCiX/NMCfGeC3DNDbBviQAT4VvQY1kdHct1mFZ9WyXqaLLjea88V1dqs44TvZZajp24jixxCCLdtXHD93yrUqXGic3I0ItAc1/VUmg74c6AquqWY9TAVXI9BI8d4hPxUsUXHBV+ECA/Th5I4CvVOtWfupYIXsHmr6p2TKYike8PXy3CnXd/3uIvDTRtPfxbV+TLv5VSpOoM49EjHng74Kz671GbLzpVAWkV8N0LuS3BjNr4iT+7/F8KBYnoobBuhw6Xvv78pdMt/nyI5ndO7OCT8hljCD80TNPyPwtlp9RlOQcbKXRV7s9UY913TzSvEhktiIBSDQqwY4Y3SwKRGKl4CaHy5/+8EW1W4wmp6cNE8nt1G1G1CzV7YAvlW1Gzyg+yIEmJmu83tOnOc5fL8B2iv5AgKPi6ND4APVxv5EIg2jl0Y89FBlfu/3jEHRkRUytmllIvbv9vVIt2pFmIkwOBG20uVfww50aStqPjlnTVCOIiflnkYVSdZgND8kyVDpb39p7kLU/H61ik8j+z33ty7VisBUsNwAf12H8iV/MizpsGol+E52mRRB9Sof8Q2S7/epVoCfCpYYoK8ap3zUGmjPfOoLiwg7yl2Z5ghq+kh8i0oiDASPNlP5iAxJjaCSBK97TKOm3CzObBzd3B1G0+bJqrEuS+ATGZfXqqQAJ5oTM79wxs3dXrpWqjijaVfdlgAUyEFIvJorpXZ0DZ8/V6KT0cHdlfcZoMcb8DnkPU0b4tG8CAN0bxW7dXi6+t0AvVC/JfCpWCtQA7S3upelXZX3SlgzQEfr9glSVMVFAka7wHOT8MSU+4F6G/ApiIyhk19vvxOsC53ZGpzXi9GEBoH9BhEgzx6V9pzVoy8zS+Nylhc9ahx6zAA/1TDly/KT1CLWSEDgA01Qol4Z7FsdLrZDgJNfXz7QSI6g5pesECCQQiVuhaclwVaH2tcj3bV0fawJ8GnPya6xQgK6tDV2hacn4ZClQ5Sww2h6L5GfgqadFghQSnp4VQ1F2CYAeNza6XHapesqTm8TIQi0T9kCAm+LW+HpxHODm9s9NA7anRCDJGaJwSZrJPhyOAJ8JH6lo2J5jA5TwXKZ5ohf8bJ4Ll9hlYSMy2ulhxe34iVBoOeVbQxAft3sp8NW5RcVBzxNGyoHJGOxAE0HVVwwTm5jYTAiRhIcfiA2AkokSA8vpu8/6688do5KxH93wOSYqzXJQLBdJQVpN78Kgb6zuPs/WGuV1TRMoXnQBgEe0D0qiehbHS42mp5r7u7zmyrpQBm4Bj7dBOWP9HfyUtUK8JzsmsKgdIOU13zcdNJFqpXgq3CBHJkh8B91EjDU38kXq1ZFuhAl9s1z599oGbOfC56Tu6naSCGhLrHevl6gplskj59B8awMXSQuzjervJaSVmaFhBDP5QcTkd6ewRmolsd/KYAqrgytV7AAAAAASUVORK5CYII=">
+                    <p class="text-white text-lg text-center">Mouse</p>
+                </a>
+                <a class="border p-6 rounded-lg shadow-md" href="#teclados">
+                    <img class="m-auto w-[35px] mb-[4px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmklEQVR4nO2ZMUoDURCGB7GxkiTzIkgCIohg4wXE3hPYWduJNsY3C1t4Bz2AjZEQvIDgDbyC2iYzZoMgCLLyNmuIiQQxIbsT3wd/s83OvzPvX5gH4PGMJYR4oVburJ+uvKyBZsJSa5WMxGTkCTRzVmxvJUaQH0AzhLyfGrkFzRDylTMSoByBVsjIDhl+tyhvVOAqaMMlFKEEhPLqumENn0PeCYvtii3zoUW5IMP31jCnKdUTyqWLYMgrgZFta/jOGv74VnjvYLetkWtC2YXcz35/bCQiI3VCPrHIe65DoIHjyvOSRX5Mv369ttwpgEaskYOvH1wI8WLW9XhmChW4SigNMtIdSZT8qkvIzaDU2uybGMlyRbKGOUm+tBOxct2AsnGKf+6KRJCHQqYhmGsjMJxqOX1O3sgQviOzGi1SKJhrIzCGrM7FIN7IIL4jWYwWKRT8q9SiCcbgN/z1veSNDOE7MqvRIoWCeTLSzbqIKajjrrqaOShkMqE0wG3qtC/oAow2khRwmzq35ErvLpQYkMh1om/C4/F4QBOfrJSH+4bTcwoAAAAASUVORK5CYII=">
+                    <p class="text-white text-lg text-center">Teclados</p>
+                </a>
+                <a class="border p-6 rounded-lg shadow-md" href="#celulares">
+                    <img class="m-auto w-[35px] mb-[4px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO2aMQrCQBREt7LSQt3ptBRPaOFuIPeRkHtJ3MXkApHFSiEYcCdEnAe/CfzA7H/lGPPP+HXYexsrj9h5xD7TdN6Gutg2x8lCOISQMcDLOIRQbm47fpDnJXryXPhBRujkEM+l6Rfvu+mbt9GN2G+nCPLxRUtcl0P7p22zGvMPM4cg6dWHLuJs9L8TBN+PUZCR6CKQWhykFqQWB6kFqcVBakFqcZBakFocpBakFgepBanFQWpBanGQWpBaHKQWpBYHqQWpxUFqQWpxyNw/GZo7P4gNNT2IjRU9SGrvsEs1hW0PZgpSeycVX1JnJF+A2KZLTBZirjwARHbi8p82t+8AAAAASUVORK5CYII=">
+                    <p class="text-white text-lg text-center">Celulares</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="worksation">
+        <h2 class="text-6xl text-white mt-48 ml-32 mb-8">
+            Workstaion
+        </h2>
+        <div class="grid grid-cols-6 gap-x-4 ml-32 mr-32">
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px]" src="/assets/img/setup/01.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 01
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[134px]" src="/assets/img/setup/02.jpeg" alt="workstation_02">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 02
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 4.200,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px]" src="/assets/img/setup/03.jpg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 03
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 4.800,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[134px]" src="/assets/img/setup/04.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 04
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 5.120,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[134px]" src="/assets/img/setup/05.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 05
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[134px]" src="/assets/img/setup/06.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 06
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="monitores">
+        <h2 class="text-6xl text-white mt-12 ml-32 mb-8">
+            Monitores
+        </h2>
+        <div class="grid grid-cols-6 gap-x-4 ml-32 mr-32">
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg w-[234px] h-[135px] mb-[4px]" src="/assets/img/monitores/01.avif" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Monitor 01
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 1.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[234px] h-[135px]" src="/assets/img/monitores/02.jpeg" alt="workstation_02">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mnitor 02
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 2.200,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/monitores/03.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Monitor 03
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.800,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[134px] h-[135px]" src="/assets/img/monitores/04.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mnitor 04
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 5.120,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] w-[134px] h-[135px]" src="/assets/img/monitores/05.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Monitor 05
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/monitores/06.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Monitor 06
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="mouse">
+        <h2 class="text-6xl text-white mt-12 ml-32 mb-8">
+            Mouse
+        </h2>
+        <div class="grid grid-cols-6 gap-x-4 ml-32 mr-32">
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/mouse/01.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mouse 01
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 500,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/mouse/02.jpg" alt="workstation_02">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mouse 02
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 200,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/mouse/03.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mouse 03
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 800,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/mouse/04.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mouse 04
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 120,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/mouse/05.png">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mouse 05
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 250,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/mouse/06.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Mouse 06
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="teclados">
+        <h2 class="text-6xl text-white mt-12 ml-32 mb-8">
+            Teclados
+        </h2>
+        <div class="grid grid-cols-6 gap-x-4 ml-32 mr-32">
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/teclados/01.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Teclado 01
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 460,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/teclados/02.jpeg" alt="workstation_02">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Teclado 02
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 800,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/teclados/03.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Teclado 03
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 1.800,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/teclados/04.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Space Ship 04
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 1.120,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/teclados/05.webp" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Teclado 05
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 700,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/teclados/06.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Teclado 06
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 1.300,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="celulares" class="mb-8">
+        <h2 class="text-6xl text-white mt-12 ml-32 mb-8">
+            Celulares
+        </h2>
+        <div class="grid grid-cols-6 gap-x-4 ml-32 mr-32">
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/celulares/01.jpg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Celular 01
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 3.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/celulares/02.webp" alt="workstation_02">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Celular 02
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 1.200,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[135px]" src="/assets/img/celulares/03.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Celular 03
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 4.800,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/celulares/04.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Celular 04
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 2.120,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/celulares/05.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Celular 05
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 6.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+
+            <div class="border rounded-lg">
+                <img class="rounded-t-lg mb-[4px] h-[134px]" src="/assets/img/celulares/06.jpeg" alt="workstation_01">
+                <p class="text-white text-lg mb-[4px] ml-[4px]">
+                    Celular 06
+                </p>
+                <p class="text-2xl text-violet-600 ml-[4px]">
+                    R$ 1.000,00
+                </p>
+                <button class="bg-[#BF15EE] px-6 py-1 w-full text-white rounded-b-lg">
+                    Comprar Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="flex flex-col md:flex-row justify-between items-center w-full bg-[#1F2937] px-6 py-6">
+        <div class="flex flex-col items-center mb-4 md:mb-0">
+            <img class="w-[150px]" src="/assets/svg/cybercore_logo.svg" alt="logo">
+            <h3 class="flex justify-center text-white text-2xl font-bold">
+                CYBERCORE
+            </h3>
+        </div>
+
+
+        <div class="mb-4 md:mb-0">
+            <h3 class="text-white text-2xl mb-4">Contatos</h3>
+            <div class="flex items-center mb-4">
+                <img class="w-[35px] mr-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXUlEQVR4nO2aW4hVZRTH9zimzQVtRjMLuprVpEQPSUXRBWqyi1pSgZFQoXQRJzHBp9EeaoSKHkorgl6yez3URBe7aEVFll0stJzRqCyxlKQcHc1pfrFm/lvW7Nlnn33O2buJ8A8Dw7e+b33ru631X2ufIDiE/ymARuBq4H7gNeA74Hdgv/7s/28lsz4zgIbgvwDgcGA28BbwN6WjB1gF3AiMHIoF1AB3AducUfuA1UCrTqbJdhw4TH8NajPZEmCNxoT4BVhom/NvLeJKYIsz4DNgDjC6DF1HAHOBdU7fZuDyvK/RY27Cz4HmDPVPBb50+ldkfjrAeBlu2APMB6oznaR/nmrgTmCvO+2jslJ+oo4beZ3JmShOnvMMYJPm7DQbKlV4pFP4KTA2M2uLz90AfKi57U2Or+RNhNfpY6Auc2uL21AHfOKuWelvxj1su06NuViazo4x7lasKMfFhg879zeR8s3slU1TSwl2YZyYn9DPgtvbWqzhB+DCLBfgASxwj7/4FQMWuTgR62KBk4EdMZTDonNNkAOA4cBXmmdBmgce0o7mBF8fPsBXw4gur2a4JY+FGCzia46fE7mZyFufh0joM119jN3WunYjj4Z1QU4AqpwnvSGpo7FYw5yEPu3qc3OkfSTwm2RnZ7yGgwBu1RxvBAn5RI8YaUECCGyXohNiZMskWxnkGyj3Awdi7RS9Nqwuougv9Rv0qIHjtBm77XFmvIaDAN6TDdPjhA9I2DpIOLDfTvU7JUbWLNmuPEhlCOBuzXNfnNBSUMOMQcKB/Sx5MsyOtJ/qFrkwyBHANaHXjBN2SNhURIlReMMHBY77lTxPwwBMCj1nEIXbzTGDhAP7jQa61PcS1x5meXcEOQMYq7l2xAnNExhGpFB0r/p2hHQBuE5tfwIn5bQG7+oN+4IogO5C3iimb61Lth507c+r7WtgVDBEC9km4TEplU3RKfbaaahtFLDR5TBJ8egssYT6rK/WBgknlaCwRWOMYp+jtuOB79W+KS4NUOXENgAV7iyQHp3VYw+px8y0CjXuEY37FZjoAuMXbpFLwwwTuEhBtVdZXwi72svjGEOC+22PE1rRzLCsDHr9pqPxp7m85nG380b72xz9b3NX7EVXqewBFlcSEK9IQ1EScuswUJobv9jJzndFBBz9HxaTqD0leVeR+d5Xv2mFjOkSGRtXxmJqFQzR1VnsAyNwHvAocI+n/xEd4zR+V8I8jY40xntG4DkpmlfqQjR+mB23u07muaaUMH6mxq1K6HOb+rwepEiaLKWsKmMtoZ7LgK3S1auTujSJuih93qIxixISq9CJzCq2oxvL8V4FCtRtovS4FNVO7AKVeeq1AHu8f7hNrCtS3dla9DOES3fXV7KQSLWy1ZHSJLxQ6N7LO65Xv5Y0Ex+rzrujniWDRZ0LPCwKs0e87EfgGTulIHmsfTsJg2zxj0LATQWDzRABONNxwXSfMir1XFmD/qtpRTnDQ2kHVbu8ZELuVha3px5YK3vWpv7OaMRPgzpzt7K4LY3AR7Jnc0kffETuDMtztTLdm+iULR1piGRUgUViw1W5WZk8/3B5p253nUqjS5ECXaGANMFqu8CTwMuqhZXNACIR24JdGCf6HnZZ396B66XgHdc2UZ+eVzrKEcU3wO1lEs1GcaeQdoRXqfyvxcATfWrgXeBp5RZRWG33JZWE5jo6g05zjWjJtcDplvWpwj9ClGSyiOFSUfGw4IE2qqXiX0AAP8UYvl20YZ7Sy6oYbjZNRYewRFQKDqgwOCuzn3DQfxJ2Cs/quJtKHF+je75E72eDChrd2vmdOsF2EcdpeVZaDiEYYvwDwmQpi4gIWMAAAAAASUVORK5CYII=">
+                <p class="text-white text-2xl">
+                    (11) 99999-9999
+                </p>
+            </div>
+            
+            <div class="flex items-center mb-4">
+                <img class="w-[35px] mr-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJklEQVR4nO3YS6hNcRTH8b/3q9xEiJBuXQYMGEhJkVJSklJKMVB3amh0S3dkamggJWWiZGLAgJQUSSYMiAGRR97v10f7Wrd2p3PuOffcfZxH+1t7ss9vrfX/9T/rv/faKZWUlJSUtAM9QtJrRlKXomeNoD91GeivZuQ9dqcuATvwppqRjD84hsmpQ8EkHMHvqs2OodyPF9CXOgz0xdrEWoeqNnvFdj3AmtQhYBXuVbZBzVMLy3Erbn/E3rY6SCNr2oV3saa7+YNpzOMXM3Eq97c7gWltMDAlejbr3YyzmFOhqW0kJxrEj5BcxaL/aGI+LkXtn1mD19DVNxLCzXgesifY0FIHaaTmOjyKmq+wbQxtY0ZCvBQ3QvoNh1riII3U2o/PUes2VtTRN24kAmbgeEXfTC/QwNToh1FOY1YDceMzkgs8gC8Rdh1LCjCxEFdyOz44jtjmjETwejyO0JfY2pSDf7k24VnkeoqN44xv3kgkWIDL9U6VOjmyU/F75LiGxU3kmJiRGuf8GcxuIC57Tp0s4jmlCCO5ZPvwKVLdwcoxtMtwM7RfcXCCtYsdrLAa9yPda2yvotmCF6F5iLUF1C1+QsRcnI+Uv3A0Gwni1ftw9FLGRcwrqGZrRt1Y+HCub87FJe4NFznvaJWRXIGdeDuaHx+wpwV1Wv/xAQMxEmTXQItq9OhXlNSlKI10GMod6TCUO9Jh6Nkd6XaSHiGVlJSUlKQ28BeJl84fDKCHpgAAAABJRU5ErkJggg==">
+                <p class="text-white text-2xl">
+                    atendimento@cybercore.com
+                </p>
+            </div>
+
+        </div>
+
+        <div class="w-full md:w-auto">
+            <h3 class="text-white text-2xl mb-2">Onde estamos?</h3>
+            <p class="text-white mb-4">Av. Brig. Faria Lima, 3477 - 18º Andar <br>Itaim Bibi, São Paulo - SP, 04538-133</p>
+        <iframe
+            class="w-full h-54 md:w-96"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.488619758525!2d-46.6847268240372!3d-23.586803078782417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle%20S%C3%A3o%20Paulo%20-%20Edif%C3%ADcio%20P%C3%A1tio%20Victor%20Malzoni!5e0!3m2!1sen!2sbr!4v1711918835514!5m2!1sen!2sbr" style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    </footer>
+
+
+</body>
+</html>
