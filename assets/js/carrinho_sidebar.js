@@ -12,8 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     sidebar.style.height = '100%';
     sidebar.style.backgroundColor = '#f4f4f4';
     sidebar.style.overflowX = 'hidden';
+    sidebar.style.overflowY = 'auto';
     sidebar.style.transition = '0.5s';
-    sidebar.style.padding = '10px';
+    sidebar.style.padding = '0px';
 
     function atualizarCarrinho() {
         const carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             total += parseFloat(produto.preco.replace('R$ ', '').replace(',', '.'));
         });
         const totalDiv = document.createElement('div');
-        totalDiv.innerHTML = `Total: R$ ${total.toFixed(2)}`;
+        totalDiv.innerHTML = `Total: R$ ${total.toFixed(3)}`;
         sidebar.appendChild(totalDiv);
     }
 
