@@ -11,12 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let total = 0;
         carrinho.forEach(produto => {
             const div = document.createElement('div');
-            div.innerHTML = `${produto.nome} - ${produto.preco}`;
+            div.classList.add('carrinho-item');
+            div.innerHTML = `${produto.nome}<br>${produto.preco}`;
             carrinhoItens.appendChild(div);
             total += parseFloat(produto.preco.replace('R$ ', '').replace(',', '.'));
         });
-        carrinhoTotal.innerHTML = `Total: R$ ${total.toFixed(2)}`;
+        carrinhoTotal.innerHTML = `Total: R$ ${total.toFixed(3)}`;
     }
+
 
     comprarBtn.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -32,11 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     carrinhoIcone.addEventListener('click', () => {
-        sidebar.classList.toggle('open');
+        const isOpen = sidebar.classList.contains('open');
+
+        if (!isOpen) {
+            sidebar.classList.add('open');
+            body.classList.add('no-scroll');
+        } else {
+            sidebar.classList.remove('open');
+            body.classList.remove('no-scroll');
+        }
+
         atualizarCarrinho();
     });
 
-    // Evento para fechar o sidebar ao clicar fora
     document.addEventListener('click', (e) => {
         if (!sidebar.contains(e.target) && !carrinhoIcone.contains(e.target) && sidebar.classList.contains('open')) {
             sidebar.classList.remove('open');

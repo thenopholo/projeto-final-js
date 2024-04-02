@@ -20,20 +20,37 @@ p{
 }
 
 .sidebar {
-    width: 0;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    width: 0px;
     position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #f4f4f4;
+    top: 100px;
+    right: -250px;
+    height: calc(100% - 100px);
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.5s;
     padding: 10px;
-    z-index: 1000;
+    z-index: 9;
 }
 
-/* Classe para exibir o sidebar */
 .sidebar.open {
     width: 250px;
+    right: 0;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.carrinho-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.carrinho-item:last-child {
+    border-bottom: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

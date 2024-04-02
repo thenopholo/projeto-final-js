@@ -12,10 +12,11 @@
 </head>
 <body class="bg-gray-900">
 
-    <div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar bg-gray-800">
         <h2>Seu Carrinho</h2>
         <div id="carrinho-itens"></div>
         <div id="carrinho-total"></div>
+        <a href="" class="px-6 py-1 bg-[#7B68EE] text-white text-lg rounded-md">Ver Carrinho</a>
     </div>
 
     <header class="flex justify-between items-center fixed z-10 px-6 py-6 bg-gray-800 w-full">
@@ -25,9 +26,9 @@
             </a>
 
             <ul class="flex justify-center items-center text-white">
-                <li class="pr-6 text-lg">Home</li>
-                <li class="pr-6 text-lg">Produtos</li>
-                <li class="pr-6 text-lg">Contato</li>
+                <a href="/index.html"><li class="pr-6 text-lg">Home</li></a>
+                <a href="#produtos"><li class="pr-6 text-lg">Produtos</li></a>
+                <a href="#contato"><li class="pr-6 text-lg">Contato</li></a>
             </ul>
 
 
@@ -53,7 +54,7 @@
         </h1>
     </section>
 
-    <section class="flex justify-center">
+    <section id="produtos" class="flex justify-center">
         <div class="flex justify-between items-center absolute top-[850px] px-6 py-10 bg-gray-800 w-4/5 rounded-lg gradient-border">
             <h2 class="felx justify-center items-center text-white text-2xl">
                 O que você está procurando?
@@ -508,7 +509,7 @@
     </section>
 
     
-    <footer class="flex flex-col md:flex-row justify-between items-center w-full bg-[#1F2937] px-6 py-6">
+    <footer id="contato" class="flex flex-col md:flex-row justify-between items-center w-full bg-[#1F2937] px-6 py-6">
         <div class="flex flex-col items-center mb-4 md:mb-0">
             <img class="w-[150px]" src="assets/svg/cybercore_logo.svg" alt="logo">
             <h3 class="flex justify-center text-white text-2xl font-bold">
