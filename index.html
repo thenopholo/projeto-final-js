@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/tailwind.config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +55,7 @@
     </section>
 
     <section id="produtos" class="flex justify-center">
-        <div class="flex justify-between items-center absolute top-[850px] px-6 py-10 bg-gray-800 w-4/5 rounded-lg gradient-border">
+        <div class="flex justify-between items-center absolute top-[800px] px-6 py-10 bg-gray-800 w-4/5 rounded-lg gradient-border">
             <h2 class="felx justify-center items-center text-white text-2xl">
                 O que você está procurando?
             </h2>
@@ -85,7 +84,13 @@
         </div>
     </section>
 
-    <section id="worksation">
+    <section id="produtosContainer" class="flex justify-center mt-[200px]">
+        <div id="produtosGrid" class="grid grid-cols-6 auto-grid-rows gap-x-4 gap-y-4 mb-[24px]">
+            <!-- Os produtos serão inseridos aqui pelo JavaScript -->
+        </div>
+    </section>
+
+    <!-- <section id="worksation">
         <h2 class="text-6xl text-white mt-48 ml-32 mb-8">
             Workstaion
         </h2>
@@ -507,7 +512,7 @@
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
 
     
     <footer id="contato" class="flex flex-col md:flex-row justify-between items-center w-full bg-[#1F2937] px-6 py-6">
@@ -550,7 +555,7 @@
     </div>
     </footer>
 
-
+    <script src="assets/js/products.js"></script>
     <script src="assets/js/carrinho_sidebar.js"></script>
 </body>
 </html>
