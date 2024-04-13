@@ -217,13 +217,12 @@ function renderizarProdutos() {
 
         const precoProduto = document.createElement('p');
         precoProduto.classList.add('precoProduto', 'text-2xl', 'text-violet-600', 'ml-[4px]');
-        precoProduto.textContent = `R$ ${produto.preco.toFixed(2)}`;
+        precoProduto.textContent = `R$ ${produto.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }`;
         cardProduto.appendChild(precoProduto); // Adiciona o preço ao div
 
         const buyNowBtn = document.createElement('button');
         buyNowBtn.classList.add('buyNow', 'bg-[#BF15EE]', 'px-6', 'py-1', 'w-full', 'text-white', 'rounded-b-lg');
         buyNowBtn.textContent = 'Comprar Agora';
-        buyNowBtn.onclick = () => adicionarNoCarrinho(produto.nome);
         cardProduto.appendChild(buyNowBtn); // Adiciona o botão ao div
 
         containerProdutos.appendChild(cardProduto); // Insere o div no container
