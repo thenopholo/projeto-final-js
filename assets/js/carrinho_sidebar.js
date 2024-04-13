@@ -14,9 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             div.classList.add('carrinho-item');
             div.innerHTML = `${produto.nome}<br>${produto.preco}`;
             carrinhoItens.appendChild(div);
-            total += parseFloat(produto.preco.replace('R$ ', '').replace(',', '.'));
+
+            let preco = produto.preco.trim();
+            preco = preco.replace('R$ ', '').replace(/\./g, '').replace(',', '.');
+            total += parseFloat(preco);
         });
-        carrinhoTotal.innerHTML = `Total: R$ ${total.toFixed(3)}`;
+        carrinhoTotal.innerHTML = `Total: R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     }
 
 
