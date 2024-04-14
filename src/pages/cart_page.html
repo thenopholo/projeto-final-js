@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/cart_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>Página de Carrinho</title>
+</head>
+<body class="bg-gray-900 pt-[72px] flex justify-center items-start min-h-screen p-4">
+    <header class="flex justify-between items-center fixed z-10 px-6 py-6 bg-gray-800 w-full top-0 left-0">
+        <nav class="flex justify-between items-center w-full">
+            <a class="flex items-center text-2xl text-white" href="/index.html">
+                <img src="/assets/svg/cybercore_logo.svg" alt="logo" class="w-[54px]">
+            </a>
+
+            <ul class="flex justify-center items-center text-white">
+                <a href="index.html"><li class="pr-6 text-lg">Home</li></a>
+                <a href="#produtos"><li class="pr-6 text-lg">Produtos</li></a>
+                <a href="#contato"><li class="pr-6 text-lg">Contato</li></a>
+            </ul>
+
+
+            <div class="flex">
+                <button>
+                    <img class="carrinho w-[35px] mr-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACr0lEQVR4nO2az0uUQRjHZys6dimRoqCEhG7dsg79Ff066CEj6CR4CCGzVDpEaEKeOohGup46BB2qg5CHwtJL3cIyq0tQ7xKu+6MtPzHabvPaRunMvPvOzvuFB5aXhed5Pu935p133hEiUaJEiRKtCWgGLgJd60Jeaxb1LuANf9e88BwAot4FHAR6gOtK+AOgmhIAYXU5FueBvcIgABf1HbgBbPUVQFnD2gCe3Mo7E9PDeRaeldTyV4DDWgC6GwKn4nJjwOupb2oLfV4B6G4IeHBpWW3htncA5tLFUAteAbiyJyAXyKFfUYtXAO6cWVLLfw+kvAIwF7b/wIabdxlAFfsfET4BGDttwP4uA5idKKilD4rNCgcBSPsv687+LgMwZn9XARizv4sAjNrfRQBjp0L2/6BlfxcBzI6H7H9T6AqHAPTsDsh+Dtn/qFcARk8atr9rAF7cNWx/lwBYsb9LAKzY3yUA6+w/JEwJBwBUsf8xrwCMhu3/EdjiFYD56ZId+7sA4F5HVi1RjoNDwgcAvfsyPL6WY+WHWiEjRpv/F4Chlq887M3xqD+6mBrI8+p+kaVP4c6Bl8AOESWAL+/+KKJWego0Gm9eSs0iNnikJgLJ3Z4OYJuwJRT955Ea23EVuCC3uTf9zd8UAC/E2gmLsrYL3wQsKABOCN8EDCoA5BvHSEQHnNqMLmk1AOwCFqmN2kQcBDQBMzUA0CriIiAFHAc6I3rctcZiCCRKVHUIdP76nXIth84k+LzKJCWvNbmSw9ZjcFH+J+45jCyESkVWv73JkL+1DyBFmMPIUjh9NlvZC0i3h7ai3sY9h05xxXIFffszleL6D2TU4gpxz2Hm7rT/vjuT5yw5wFIOc+NzorB6ANHqHGAhh+0Zemfcc9h6GZoxvA6wmkO3wFQ9rgR/Atj0wEIlFUxOAAAAAElFTkSuQmCC">
+                </button>
+                <a href="/src/pages/login_page.html">
+                    <button class="px-6 py-1 bg-[#7B68EE] text-white text-lg rounded-md">Login</button>
+                </a>
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <div
+    class="flex justify-center items-center drop-shadow-xl w-full max-w-md h-[350px] overflow-hidden rounded-xl bg-gray-800 m-auto"
+    >
+    <div
+        id="cardCarrinho"
+        class="absolute inline-block text-white z-[1] opacity-90 rounded-xl inset-0.5 bg-gray-800 px-4 py-4 w-full overflow-y-auto"
+        style="max-height: calc(100vh - 72px - 1rem);"
+    >
+        <div class="flex justify-between mb-4">
+            <h1 class="text-white text-2xl">Seu carrinho</h1>
+            <a href="#" id="checkout" class="cursor-pointer bg-violet-600 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">Finalizar Compra</a>
+        </div>
+
+        <div id="listaDeProdutos" class="mb-4">
+            <!-- Produtos do carrinho serão exibidos aqui pelo JS -->
+        </div>
+
+    </div>
+    <div class="absolute w-56 h-48 bg-white blur-[50px] -left-1/2 -top-1/2"></div>
+    </div>
+    <script src="/assets/js/cart_page.js"></script>
+</body>
+</html>
