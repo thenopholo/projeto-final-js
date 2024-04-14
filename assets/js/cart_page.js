@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Exibir o total
         const totalDiv = document.createElement('div');
-        totalDiv.className = 'total-carrinho text-white';
+        totalDiv.className = 'total-carrinho text-white text-2xl font-bold';
         totalDiv.textContent = `Total: R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
         listaDeProdutos.appendChild(totalDiv);
 
