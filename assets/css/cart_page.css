@@ -38,3 +38,8 @@ button{
     scrollbar-width: thin;
     scrollbar-color: #7B68EE #2D2D2D;
 }
+
+.card h2{
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 700;
+}
