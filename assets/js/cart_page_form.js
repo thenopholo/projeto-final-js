@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function criarCard() {
         const card = document.createElement('div');
-        card.className = 'card inline-block z-[1] text-white opacity-90 rounded-xl bg-gray-800 px-4 py-4 w-full overflow-y-auto';
+        card.className = 'card inline-block z-[1] text-white opacity-90 rounded-xl bg-gray-800 px-4 py-4 w-full overflow-y-auto mb-6';
         card.innerHTML = `
         <h2 class="text-white font-bold text-2xl">Informações para Envio</h2>
 
